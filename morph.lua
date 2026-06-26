@@ -13,7 +13,7 @@ local function becomeLocust()
     if not model then
         warn("Không tìm thấy model 'TheLocust' ở ReplicatedStorage hoặc Workspace!")
         return
-  end
+    end
 
     local newChar = model:Clone()
     newChar.Name = player.Name
@@ -39,3 +39,4 @@ player.CharacterAdded:Connect(function()
     task.wait(1)
     becomeLocust()
 end)
+
